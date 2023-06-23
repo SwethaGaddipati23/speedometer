@@ -8,14 +8,14 @@ class Speedometer extends Component {
   onAccelerate = () => {
     const {speed} = this.state
     if (speed < 200) {
-      this.setState(prevState => ({count: prevState.speed + 10}))
+      this.setState(prevState => ({speed: prevState.speed + 10}))
     }
   }
 
   onBrake = () => {
     const {speed} = this.state
     if (speed > 0) {
-      this.setState(prevState => ({count: prevState.speed - 10}))
+      this.setState(prevState => ({speed: prevState.speed - 10}))
     }
   }
 
